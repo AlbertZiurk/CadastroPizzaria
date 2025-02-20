@@ -1,5 +1,7 @@
 :root {
-  --main-background: #1b1c30;
+  --main-background: #d85c37;
+  --text-color: #4e3e34;
+  --ancor-color: #fffcf2;
 }
 
 body {
@@ -11,7 +13,11 @@ body {
   /* Padronização de cores e fonte */
   font-family: "Roboto", sans-serif;
   background-color: var(--main-background);
-  color: #fff;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
 #login {
@@ -28,39 +34,82 @@ body {
   width: 180px;
 }
 
-.email input,
+.descricao label,
+.descricao textarea,
 .senha input,
+.tamanho input,
+.preco input,
+.tipo-massa input,
+.ingredientes input,
 .nome input,
-.confirm-senha input {
+.confirm-senha input,
+.bairro input,
+.fone input,
+.rua input,
+.numero input,
+.email input,
+.container .cancelar button {
   border-radius: 15px;
   border: none;
   width: 250px;
   height: 35px;
   padding-left: 15px;
-  background-color: #292a38;
-  color: #96979e;
+  background-color: #fffcf2;
   margin-top: 15px;
 }
 
 .entrar input:hover,
 .entrar a:hover,
 .salvar input:hover,
-.salvar a:hover {
+.salvar a:hover,
+.container .cancelar button:hover,
+.ingredientes select:hover {
   opacity: 0.7;
 }
 
 a {
   text-decoration: none;
-  color: aquamarine;
+  color: var(--ancor-color);
 }
 
 .entrar input,
-.salvar input {
+.salvar input,
+.container .cancelar button {
   cursor: pointer;
   width: 120px;
   height: 40px;
   border-radius: 20px;
   border: none;
-  background-color: #77c97c;
-  color: var(--main-background);
+  background-color: var(--text-color);
+  color: var(--ancor-color);
 }
+
+.ingredientes label{
+  color: var(--ancor-color);
+}
+
+.ingredientes select{
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--ancor-color);
+}
+
+.salvar, .ingredientes, .img input{
+  margin-top: 15px;
+}
+
+.container .cancelar, .container .salvar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .cancelar button{
+  text-align: center;
+}
+

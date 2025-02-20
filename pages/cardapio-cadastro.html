@@ -32,7 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Cadastro Cliente</title>
+    <title>Cadastro Cardápio</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
@@ -41,31 +41,36 @@
       <div class="caixa">
         <form action="" method="post">
           <img src="../img/logo.png" alt="Logo" />
-        <h1>Cadastro Cliente</h1>
+        <h1>Cadastro Cardápio</h1>
         <div class="nome">
           <input type="text" placeholder="Nome" maxlength="50" title="Digite no máximo 50 caracteres" autocomplete="
           name" pattern="text" autofocus required/>
         </div>
-        <div class="email">
-          <input type="text" placeholder="E-mail" maxlength="50" title="Digite no máximo 50 caracteres" autocomplete="email" pattern="email" required/>
+        <div class="img">
+          <input type="file" accept="image/png, image/jpeg" placeholder="Imagem" title="Faça upload do arquivo .png, .jpg" pattern="file" required/>
         </div>
-        <div class="fone">
-          <input type="tel" placeholder="Telefone (XX) XXXXX-XXXX" id="fone" maxlength="11" pattern="\(\d{2}\) \d{5}-\d{4}" title="Digite somente números" autocomplete="tel" required/>
+        <div class="descricao">
+            <textarea name="descricao" id="descricao" cols="10" rows="4" placeholder="Descreva os ingredientes e o sabor da pizza..." maxlength="200" required></textarea>
         </div>
-        <div class="bairro">
-          <input type="text" placeholder="Bairro" title="Digite no máximo 50 caracteres" maxlength="50" required/>
+        <div class="tamanho">
+          <input type="number" placeholder="Tamanho" title="Defina o tamanho da pizza" required/>
         </div>
-        <div class="rua">
-          <input type="text" placeholder="Rua" title="Digite no máximo 50 caracteres" maxlength="50" autocomplete="street-address" required/>
+        <div class="preco">
+          <input type="text" placeholder="Rua" title="Digite o preço da pizza" maxlength="50" step="0.01" min="0" required/>
         </div>
-        <div class="numero">
+        <div class="tipo-massa">
           <input type="number" placeholder="Número" title="Digite somente números" required/>
         </div>
-        <div class="senha">
-          <input type="password" placeholder="Senha" pattern="password" required/>
-        </div>
-        <div class="confirm-senha">
-          <input type="password" placeholder="Confirme a sua senha" required/>
+        <div class="ingredientes">
+         <label for="ingredientes">Escolha os ingredientes:</label>
+         <select name="ingredientes" id="ingredientes" required>
+            <option value="Queijo">Queijo</option>
+            <option value="Pepperoni">Pepperni</option>
+            <option value="Cogumelos">Cogumelos</option>
+            <option value="Cebola">Cebola</option>
+            <option value="Pimentão">Pimentão</option>
+            <option value="Azeitonas">Azeitonas</option>
+         </select>
         </div>
        <div class="container">
         <div class="cancelar">
