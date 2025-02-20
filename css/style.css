@@ -1,0 +1,66 @@
+:root {
+  --main-background: #1b1c30;
+}
+
+body {
+  /*  Reset  */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* Padronização de cores e fonte */
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-background);
+  color: #fff;
+}
+
+#login {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa {
+  margin-top: 65px;
+}
+
+.caixa img {
+  width: 180px;
+}
+
+.email input,
+.senha input,
+.nome input,
+.confirm-senha input {
+  border-radius: 15px;
+  border: none;
+  width: 250px;
+  height: 35px;
+  padding-left: 15px;
+  background-color: #292a38;
+  color: #96979e;
+  margin-top: 15px;
+}
+
+.entrar input:hover,
+.entrar a:hover,
+.salvar input:hover,
+.salvar a:hover {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.entrar input,
+.salvar input {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #77c97c;
+  color: var(--main-background);
+}
